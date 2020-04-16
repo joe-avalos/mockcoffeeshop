@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+console.log(process.env)
 module.exports = {
   siteMetadata: {
     title: `Mock Coffee JAMShop`,
@@ -25,6 +29,13 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/logo.svg`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_API_KEY,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
