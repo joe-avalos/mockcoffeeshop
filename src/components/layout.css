@@ -40,6 +40,10 @@ h6{
     opacity: 1 !important;
 }
 
+.menu, .contact{
+    background: var(--mainGrey);
+}
+
 .about-background {
     min-height: calc(60vh - 74px);
 }
