@@ -24,6 +24,7 @@ export const getProducts = graphql`
         id
         image {
           fluid(maxHeight: 426) {
+            src
             ...GatsbyContentfulFluid_tracedSVG
           }
         }

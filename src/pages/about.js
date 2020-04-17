@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaGulp } from 'react-icons/fa'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
